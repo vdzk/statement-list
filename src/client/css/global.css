@@ -1,0 +1,70 @@
+html {
+  overflow-y: hidden;
+}
+
+body {
+  background: #fff8e1;
+}
+
+.fh-cols {
+  display: flex;
+}
+
+.fh-col {
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.fh-col:not(:last-child) {
+  padding-right: 0rem;
+}
+
+.fh-scroll {
+  min-height: 0px;
+  overflow-y: auto;
+}
+
+.main-list .list-item,
+.rel-list .list-item {
+  padding: 0.5em;
+}
+
+.tail-icons {
+  position: relative;
+  float: right;
+  width: 4.5em;
+}
+.tail-icons:before {
+  content: "\00a0";
+}
+.icon-col-1,
+.icon-col-2,
+.icon-col-3 {
+  position: absolute;
+  bottom: 0em;
+  width: 1.5em;
+  text-align: center;
+}
+.icon-col-1 {
+  right: 0em;
+}
+.icon-col-2 {
+  right: 1.5em;
+}
+.icon-col-3 {
+  right: 3em;
+}
+
+.main-list .list-item:hover {
+  cursor: pointer;
+  background: whitesmoke;
+}
+
+.control.has-icons-left .icon,
+.control.has-icons-right .icon {
+  color: inherit;
+}
